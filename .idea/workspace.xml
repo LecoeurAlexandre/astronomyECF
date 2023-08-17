@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5bff3b1-8f09-422c-b0c5-651542c2247d" name="Changes" comment="" />
+    <list default="true" id="f5bff3b1-8f09-422c-b0c5-651542c2247d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CelestObject/src/main/java/com/example/celestobject/controller/CelestObjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CelestObject/src/main/java/com/example/celestobject/entity/CelestObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CelestObject/src/main/java/com/example/celestobject/repository/CelestObjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CelestObject/src/main/java/com/example/celestobject/service/CelestObjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CelestObject/src/test/java/com/example/celestobject/service/CelestObjectServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/controller/ObservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/dto/CelestObjectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/dto/ObservationResDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/entity/Observation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/repository/ObservationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/service/ObservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/main/java/com/example/observation/tool/RestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Observation/src/test/java/com/example/observation/service/ObservationServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Observation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Observation/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2U6aPA2VWbsdtEJOZxRGQybXyQ9" />
   <component name="ProjectViewState">
@@ -20,11 +41,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Administrateur/Desktop/java/architecture/ecf4",
+    "last_opened_file_path": "C:/Users/Administrateur/Desktop/java/architecture/ecf4/User",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -37,6 +59,9 @@
       <option name="presentableId" value="Default" />
       <updated>1692262456182</updated>
       <workItem from="1692262457275" duration="482000" />
+      <workItem from="1692263451659" duration="283000" />
+      <workItem from="1692266165100" duration="345000" />
+      <workItem from="1692281898935" duration="113000" />
     </task>
     <servers />
   </component>
