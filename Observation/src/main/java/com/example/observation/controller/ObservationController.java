@@ -6,6 +6,7 @@ import com.example.observation.entity.Observation;
 import com.example.observation.service.ObservationService;
 import com.example.observation.tool.RestClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,21 +20,19 @@ public class ObservationController {
     private ObservationService _obsService;
 
     @PostMapping("")
-    public ResponseEntity<Observation> post(@RequestParam LocalDate date, @RequestParam String description, @RequestParam String picture, @RequestParam boolean display, @RequestParam int objectId, @RequestParam int userId) {
+    public ResponseEntity<Observation> post(@RequestParam LocalDate date, @RequestParam String description, @RequestParam String picture, @RequestParam boolean display, @RequestParam int objectId, @RequestParam int userId, @RequestHeader(HttpHeaders.AUTHORIZATION) String token) {
         Observation observation = _obsService.createObservation(date, description, picture, display, objectId,userId);
         return ResponseEntity.ok(observation);
     }
-    @GetMapping("{objectId}")
+    @GetMapping("object/{objectId}")
     public ResponseEntity<ObservationResDTO> getbyCelestObject(@PathVariable int objectId) {
-        RestClient<String, String> restClient = new RestClient<>();
         return ResponseEntity.ok(_obsService.getObservationsByObject(objectId));
     }
-    @GetMapping("{userId}")
+    @GetMapping("user/{userId}")
     public ResponseEntity<ObservationUserDTO> getbyUser(@PathVariable int userId) {
-        RestClient<String, String> restClient = new RestClient<>();
         return ResponseEntity.ok(_obsService.getObservationsByUser(userId));
     }
-    @GetMapping("{date}")
+    @GetMapping("date/{date}")
     public ResponseEntity<List<Observation>> getbyDate(@PathVariable LocalDate date) {
         List<Observation> observations = _obsService.getObservationsByDate(date);
         return ResponseEntity.ok(observations);
